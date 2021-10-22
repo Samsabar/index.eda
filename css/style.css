@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1194px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.search-form {
+    margin-left: 76px;
+    background: #EEEEEEB5;
+    border-radius: 10px;
+    display: flex;
+    max-width: 620px;
+    flex-grow: 1;
+    position: relative;    
+}
+
+.search-button{
+    background-color: transparent;
+    border: none;
+    position: absolute; /* иконка перемещается свободно относительно всего поля */
+    /* этими значениями прилепили иконку к верхнему правому краю инпута */
+    top: 0;
+    right: 0;
+    /* высота 100% от блока */
+    height: 100%;
+    padding-right: 18px;
+    padding-left: 18px;    
+    cursor: pointer; /* меняет стиль курсора при наведении */
+}
+
+.search-input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.auth {
+    margin-left: auto;
+}
+
+.login {
+    background: #EBEBEB;
+    border-radius: 50px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: block; /* блочная и вся кликабельная */
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;  
+}
+
+.shopping-cart{
+    position: relative;
+    width: 50px;
+    height: 54px;
+    border-radius: 50%;
+    background: #F66A15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.shopping-counter{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #FFAF19;
+    font-size: 8px;
+    line-height: 9px;
+    color: #000;
+    display: block;
+    padding: 5px;
+    border-radius: 50%;
+}
